@@ -1,0 +1,32 @@
+
+<a href="/usuarios/novo">Novo</a>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Ações</th>
+    </tr>
+
+    <?php if (!empty($users)) { ?>
+        <?php foreach($users as $user) { ?>
+            <tr>
+                <td><?php echo $user->id ?></td>
+                <td><?php echo $user->nome ?></td>
+                <td><?php echo $user->email ?></td>
+                <td>
+                    <a href="/usuarios/<?php echo $user->id ?>/editar">Editar</a>
+                    <a
+                        href="/usuarios/<?php echo $user->id ?>/remover"
+                        onclick="return confirm('Deseja realmente excluir o registro?')">
+                        Excluir
+                    </a>
+                </td>
+            </tr>
+        <?php } ?>
+    <?php } else { ?>
+        <tr>
+            <td colspan="4">Nenhum resultado encontrado</td>
+        </tr>
+    <?php } ?>
+</table>
