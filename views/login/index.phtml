@@ -1,0 +1,29 @@
+<?php include __DIR__.'/../topo.phtml'; ?>
+
+<form method="post" action="/login">
+    <?php
+    if (!empty($errorMessage)) {
+        echo $errorMessage."<br/>";
+    }
+    ?>
+
+    <?php include __DIR__.'/../csrf_input.phtml'; ?>
+
+    <label>Email</label><br/>
+    <input name="email" type="text"/>
+
+    <br/>
+    <br/>
+
+    <label>Senha</label><br/>
+    <input name="password" type="password"/>
+
+    <br/>
+    <br/>
+
+    <button type="submit">
+        OK
+    </button>
+</form>
+
+<?php include __DIR__.'/../rodape.phtml'; ?>

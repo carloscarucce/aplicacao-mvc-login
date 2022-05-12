@@ -4,7 +4,6 @@ namespace App\Http\Controller;
 
 use App\Model\UserModel;
 use Corviz\Http\Request;
-use http\Exception;
 
 class UserController extends AppController
 {

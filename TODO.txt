@@ -1,5 +1,5 @@
 [X] - Crud usuarios
 [X] - Rotina de autenticação
-[ ] - Formulario login
-[ ] - Link de logout
+[X] - Formulario login
+[X] - Link de logout
 [ ] - Proteção de ataques externos

@@ -4,23 +4,58 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f0f1e4b96faba91e0eb957f3b8ca8aa",
+    "content-hash": "9ffb354635567e45c08f4c0672aa2c30",
     "packages": [
         {
-            "name": "corviz/framework",
-            "version": "v0.7-alpha",
+            "name": "corviz/csrf-token",
+            "version": "v1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Corviz/framework.git",
-                "reference": "ca2dee375b9e9b410bb11a63a02a198e191cda59"
+                "url": "https://github.com/Corviz/csrf-token.git",
+                "reference": "1ddd29966b31b9cd7cfe4f25ba1ac1ae13e8474a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Corviz/framework/zipball/ca2dee375b9e9b410bb11a63a02a198e191cda59",
-                "reference": "ca2dee375b9e9b410bb11a63a02a198e191cda59",
+                "url": "https://api.github.com/repos/Corviz/csrf-token/zipball/1ddd29966b31b9cd7cfe4f25ba1ac1ae13e8474a",
+                "reference": "1ddd29966b31b9cd7cfe4f25ba1ac1ae13e8474a",
                 "shasum": ""
             },
             "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Corviz\\CsrfToken\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Creates/Verify CSRF tokens",
+            "support": {
+                "issues": "https://github.com/Corviz/csrf-token/issues",
+                "source": "https://github.com/Corviz/csrf-token/tree/v1.0"
+            },
+            "time": "2022-05-10T01:10:09+00:00"
+        },
+        {
+            "name": "corviz/framework",
+            "version": "0.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Corviz/framework.git",
+                "reference": "db33418d4d0707cd9df7103b3f2676d45c55cfb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Corviz/framework/zipball/db33418d4d0707cd9df7103b3f2676d45c55cfb3",
+                "reference": "db33418d4d0707cd9df7103b3f2676d45c55cfb3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
                 "php": ">=7"
             },
             "require-dev": {
@@ -45,9 +80,9 @@
             "description": "Low weight php framework",
             "support": {
                 "issues": "https://github.com/Corviz/framework/issues",
-                "source": "https://github.com/Corviz/framework/tree/v0.7-alpha"
+                "source": "https://github.com/Corviz/framework/tree/0.7.1"
             },
-            "time": "2022-04-24T19:17:57+00:00"
+            "time": "2022-05-10T22:33:58+00:00"
         },
         {
             "name": "corviz/pdo-connector",

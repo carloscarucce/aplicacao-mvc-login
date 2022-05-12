@@ -8,6 +8,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/corviz/framework" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/corviz/pdo-connector" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/corviz/csrf-token" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

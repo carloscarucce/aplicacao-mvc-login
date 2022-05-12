@@ -8,6 +8,8 @@ return [
      */
     'middleware' => [
         'auth' => Middleware\AuthMiddleware::class,
+        'log' => Middleware\LogMiddleware::class,
+        'csrf' => Middleware\CsrfTokenMiddleware::class,
     ],
 
     /*
@@ -15,9 +17,9 @@ return [
      */
     'providers' => [
         \App\Auth\AuthProvider::class,
-        \App\Provider\AppProvider::class,
         \App\Provider\RequestProvider::class,
         \App\Provider\RoutingProvider::class,
         \App\Provider\SessionProvider::class,
+        \App\Provider\AppProvider::class,
     ],
 ];

@@ -6,9 +6,8 @@
     "require": {
         "php": ">=7",
         "corviz/framework": "*@alpha",
-        "corviz/pdo-connector": "*@alpha"
-    },
-    "require-dev": {
+        "corviz/pdo-connector": "*@alpha",
+        "corviz/csrf-token": "^1.0"
     },
     "autoload": {
         "psr-4": {

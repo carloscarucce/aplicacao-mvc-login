@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD Exemplo</title>
+    </head>
+    <body>
+
+    <?php if (\App\Auth\Auth::getInstance()->authenticated()) { ?>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/usuarios/lista">
+                        Usuários
+                    </a>
+                </li>
+                <li>
+                    <a href="/logout" onclick="return confirm('Deseja realmente sair?')">
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    <?php } ?>

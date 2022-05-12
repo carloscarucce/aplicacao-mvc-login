@@ -5,6 +5,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/corviz/framework" />
       <path value="$PROJECT_DIR$/vendor/corviz/pdo-connector" />
+      <path value="$PROJECT_DIR$/vendor/corviz/csrf-token" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.0" />
